@@ -20,13 +20,13 @@
   ?>
 
   <main>
-    <section class="bg-light p-5 rounded-lg">
+    <section class="bg-light p-3">
       <div class="container d-flex align-items-center">
         <div class="row">
           <div class="col">
             <h1 class="display-4">Elegí el curso indicado para vos</h1>
             <p class="lead">Hemos diseñado cursos para las distinta etapas de una producción completa. Si quieres llegar
-              lejos, todos son para vos. </p>
+              lejos, todos son para vos.</p>
           </div>
         </div>
       </div>
@@ -37,23 +37,23 @@
         require_once ('funciones/arrayCursos.php');
           foreach($cursos as $item) {
             echo '
-              <div class="row my-4">
-                <div class="col col-lg-6 col-xxl-3">
-                  <div class="card mx-auto mx-lg-0 my-2" style="width: 18rem;">
-                    <img src="' .$item["src"]. '" class="card-img-top" alt="' .$item["alt"]. '">
-                    <div class="card-body">
-                      <h5 class="card-title">' .$item["title"]. '</h5>
-                      <p class="card-text">' .$item["txt"]. '</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">' .$item["lvl"]. '</li>
-                      <li class="list-group-item">' .$item["hrs"]. '</li>
-                      <li class="list-group-item">' .$item["desc"]. '</li>
-                    </ul>
+              <div class="row m-0 p-0 justify-content-center">
+                <div class="shadow card col p-0 my-3 col-md-6">
+                  <img src="' .$item["src"]. '" class="card-img-top" alt="' .$item["alt"]. '">
+                  <div class="card-body">
+                    <h5 class="card-title">' .$item["title"]. '</h5>
+                    <p class="card-text">' .$item["txt"]. '</p>
                   </div>
-                </div>';
-                }
-                ?>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">' .$item["lvl"]. '</li>
+                    <li class="list-group-item">' .$item["hrs"]. '</li>
+                    <li class="list-group-item">' .$item["desc"]. '</li>
+                  </ul>
+                </div>
+              </div>'
+            ;
+          }
+      ?>
     </div>
 
     <section class="container my-4">
