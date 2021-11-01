@@ -22,9 +22,9 @@
   <main>
     <section>
       <form class="row g-3 col-12 mt-5 pb-5 m-0 justify-content-md-center" method="POST">
-        <div class="bg-white col-md-8 shadow rounded p-4 pt-3 pb-4 m-0 p-md-5 pt-md-3 p-lg-5 pt-lg-3 pb-lg-4">
-          <h2 class="text-center display-4 fw-bold">Contacto</h2>
-          <p class="fs-6 text-center"><em>
+        <div class="bg-primary bg-gradient col-md-8 shadow rounded p-4 pt-3 pb-4 m-0 p-md-5 pt-md-3 p-lg-5 pt-lg-3 pb-lg-4">
+          <h2 class="text-center display-4 fw-bold" style="color: white;">Contacto</h2>
+          <p class="fs-6 text-center" style="color: white;"><em>
               Si querés contactarte, rellená este
               formulario.
             </em></p>
@@ -32,38 +32,42 @@
           <hr class="mb-4">
 
           <div class="row">
-            <label class="form-label">Nombre</label>
+            <label class="form-label" style="color: white;">Nombre</label>
 
             <div class="col-6 mb-3">
-              <input name="name1" type="text" class="form-control" placeholder="Nombre" required>
+              <input name="name" type="text" class="form-control" placeholder="Nombre" required>
             </div>
 
             <div class="col-6 mb-3">
-              <input name="lastname1" type="text" class="form-control" placeholder="Apellido" required>
+              <input name="lastname" type="text" class="form-control" placeholder="Apellido" required>
             </div>
 
             <div class="col mb-3">
-              <label class="form-label">Email</label>
+              <label class="form-label" style="color: white;">Email</label>
               <input name="email" type="email" class="form-control" placeholder="Email" required>
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Teléfono</label>
+              <label class="form-label" style="color: white;">Teléfono</label>
               <input name="phone" type="tel" class="form-control" placeholder="Teléfono" required>
             </div>
 
             <div class="mb-3">
-              <label class="form-label">Mensaje</label>
-              <textarea name="msg1" class="form-control" rows="2" placeholder="Dejanos tu mensaje" required
+              <label class="form-label" style="color: white;">Mensaje</label>
+              <textarea name="msg" class="form-control" rows="2" placeholder="Dejanos tu mensaje" required
                 style="max-height: 8rem; min-height: 4rem;"></textarea>
             </div>
 
             <div class="col text-center">
-              <button name="send1" type="submit" class="btn btn-primary">Envíar</button>
+              <button name="send" type="submit" class="btn btn-secondary bg-gradient">Envíar</button>
             </div>
           </div>
         </div>
       </form>
+
+      <?php
+        include("funciones/funcionContacto.php");
+      ?>
 
       <!-- ARREGLAR CENTRADO DE MAPA -->
       <div class="d-flex justify-content-center" style="width: 35%;">
