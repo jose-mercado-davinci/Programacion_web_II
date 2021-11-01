@@ -32,10 +32,10 @@
       </div>
     </section>
 
-    <section class="container">
+    <div class="container">
       <?php
         require_once ('funciones/arrayCursos.php');
-          foreach($cursos as $item) { 
+          foreach($cursos as $item) {
             echo '
               <div class="row my-4">
                 <div class="col col-lg-6 col-xxl-3">
@@ -54,7 +54,7 @@
                 </div>';
                 }
                 ?>
-    </section>
+    </div>
 
     <section class="container my-4">
       <div class="row">

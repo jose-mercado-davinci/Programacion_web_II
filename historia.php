@@ -30,7 +30,7 @@
               producción desde la interpretación porque también lo hemos recorrido.</p>
             <hr class="my-4">
             <p>Conocé nuestros cursos</p>
-            <a class="btn btn-danger btn-lg" href="cursos.html" role="button">Ver Cursos</a>
+            <a class="btn btn-danger btn-lg" href="cursos.php" role="button">Ver Cursos</a>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
       <div class="container">
         <div class="row my-4">
           <div class="col-lg-6 py-4 my-lg-0">
-            <img src="../img/cd-player.jpg" class="img-fluid" alt="Alberto Fernandez tocando guitarra">
+            <img src="img/cd-player.jpg" class="img-fluid" alt="Alberto Fernandez tocando guitarra">
           </div>
           <div class="col-lg-6 py-4 my-lg-0 d-flex flex-column justify-content-between justify-content-lg-center">
             <h2 class="text-center mb-3 mb-lg-3"> ¡Nos encanta la música desde los tiempo de los cassettes y cds!</h2>
@@ -69,21 +69,21 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="../img/banda-tocando.jpg" class="d-block w-100" alt="...">
+                  <img src="img/banda-tocando.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h3>Primeros ensayos</h3>
                     <p>También empezamos sabiendo nada y ensayando en casa de nuestros padres</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="../img/discos.jpg" class="d-block w-100" alt="...">
+                  <img src="img/discos.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h3>Escuchamos un montón de música</h3>
                     <p>Amamos los álbumes y nos gusta pasar el tiempo escuchando mucha música</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="../img/banda-grabando.jpg" class="d-block w-100" alt="...">
+                  <img src="img/banda-grabando.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
                     <h3>Muy temprano entramos a los estudios de grabación</h3>
                     <p>De los ensayos también pasamos mucho tiempo grabando, por lo que sabemos lo que es estar detrás
