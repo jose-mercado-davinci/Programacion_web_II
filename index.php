@@ -29,7 +29,7 @@
             </p>
             <hr class="my-4">
             <p>Conocé nuestros cursos</p>
-            <a class="btn btn-danger btn-lg" href="secciones/cursos.php" role="button">Ver Cursos</a>
+            <a class="btn btn-danger btn-lg" href="cursos.php" role="button">Ver Cursos</a>
           </div>
         </div>
       </div>
