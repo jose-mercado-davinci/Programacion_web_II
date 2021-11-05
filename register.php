@@ -25,12 +25,23 @@
         <h2 class="text-center display-4 fw-bold" style="color: white;">Registrarse</h2>
         <hr class="bg-white mb-3">
         <div class="row">
-          <label class="form-label" style="color: white;">Email</label>
-          <div class="col-12 mb-3">
-            <input name="email" type="email" class="form-control" required>
+          <label class="form-label" style="color: white;">Nombre</label>
+            <div class="col-6 mb-3">
+              <input name="name" type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+          <div class="col-6 mb-3">
+            <input name="lastname" type="text" class="form-control" placeholder="Apellido" required>
           </div>
-          <label class="form-label" style="color: white;">Contraseña</label>
-          <div class="col mb-3">
+          <label class="form-label" style="color: white;">Fecha de nacimiento</label>
+              <div class="col-12 mb-3">
+                <input name="fecha de nacimiento" type="date" class="form-control" value="2003-12-31" required>
+              </div>
+            <label class="form-label" style="color: white;">Email</label>
+              <div class="col-12 mb-3">
+                <input name="email" type="email" class="form-control" required>
+              </div>
+            <label class="form-label" style="color: white;">Contraseña</label>
+              <div class="col mb-3">
             <input name="password1" type="password" class="form-control" required>
           </div>
           <label class="form-label" style="color: white;">Repetir contraseña</label>
