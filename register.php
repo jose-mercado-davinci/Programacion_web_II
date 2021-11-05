@@ -27,10 +27,10 @@
         <div class="row">
           <label class="form-label" style="color: white;">Nombre</label>
             <div class="col-6 mb-3">
-              <input name="name" type="text" class="form-control" placeholder="Nombre" required>
+              <input name="name" type="text" class="form-control" placeholder="Nombre" minlength="3" required>
             </div>
           <div class="col-6 mb-3">
-            <input name="lastname" type="text" class="form-control" placeholder="Apellido" required>
+            <input name="lastname" type="text" class="form-control" placeholder="Apellido" minlength="3" required>
           </div>
           <label class="form-label" style="color: white;">Fecha de nacimiento</label>
               <div class="col-12 mb-3">
@@ -42,11 +42,11 @@
               </div>
             <label class="form-label" style="color: white;">Contraseña</label>
               <div class="col mb-3">
-            <input name="password1" type="password" class="form-control" required>
+            <input name="password1" type="password" class="form-control" minlength="8" required>
           </div>
           <label class="form-label" style="color: white;">Repetir contraseña</label>
           <div class="col mb-3">
-            <input name="password2" type="password" class="form-control" required>
+            <input name="password2" type="password" class="form-control" minlength="8" required>
           </div>
           <div class="text-center mb-3">
             <button name="register" type="submit" class="btn btn-secondary bg-gradient">Registrarse</button>

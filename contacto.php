@@ -54,7 +54,7 @@
 
             <div class="mb-3">
               <label class="form-label" style="color: white;">Mensaje</label>
-              <textarea name="msg" class="form-control" rows="2" placeholder="Dejanos tu mensaje" required
+              <textarea name="msg" class="form-control" rows="2" placeholder="Dejanos tu mensaje" maxlength="140" required
                 style="max-height: 8rem; min-height: 4rem;"></textarea>
             </div>
 
