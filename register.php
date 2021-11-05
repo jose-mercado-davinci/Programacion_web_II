@@ -27,18 +27,18 @@
         <div class="row">
           <label class="form-label" style="color: white;">Email</label>
           <div class="col-12 mb-3">
-            <input name="email" type="email" class="form-control" required>
+            <input name="email" id="email" type="email" class="form-control" required>
           </div>
           <label class="form-label" style="color: white;">Contraseña</label>
           <div class="col mb-3">
-            <input name="password1" type="password" class="form-control" required>
+            <input name="password1" id="password1" type="password" class="form-control" required>
           </div>
           <label class="form-label" style="color: white;">Repetir contraseña</label>
           <div class="col mb-3">
-            <input name="password2" type="password" class="form-control" required>
+            <input name="password2" id="password2" type="password" class="form-control" required>
           </div>
           <div class="text-center mb-3">
-            <button name="register" type="submit" class="btn btn-secondary bg-gradient">Registrarse</button>
+            <button name="register" id="register" type="submit" class="btn btn-secondary bg-gradient">Registrarse</button>
           </div>
           <div style="color: white;">
             <p>¿Ya tenes una cuenta? <a href="login.php"><u style="color: white;">Iniciar sesión</u></a></p>

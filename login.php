@@ -27,18 +27,18 @@
         <div class="row">
           <label class="form-label" style="color: white;">Email</label>
           <div class="col-12 mb-3">
-            <input name="email" type="email" class="form-control" required>
+            <input name="email" id="email" type="email" class="form-control" required>
           </div>
           <label class="form-label" style="color: white;">Contraseña</label>
           <div class="col-12 mb-3">
-            <input name="password" type="password" class="form-control" required>
+            <input name="password" id="password" type="password" class="form-control" required>
           </div>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+              <input class="form-check-input" id="checkbox" type="checkbox" value="" id="flexCheck">
               <label class="form-check-label" for="flexCheck" style="color: white;">Recordarme</label>
             </div>
-            <button name="login" type="submit" class="btn btn-secondary bg-gradient">Iniciar sesión</button>
+            <button name="login" id="login" type="submit" class="btn btn-secondary bg-gradient">Iniciar sesión</button>
           </div>
           <div style="color: white;">
             <p>¿No tenes una cuenta? <a href="register.php"><u style="color: white;">Registrarse</u></a></p>
