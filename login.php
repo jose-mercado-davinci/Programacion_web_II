@@ -31,7 +31,7 @@
           </div>
           <label class="form-label" style="color: white;">Contraseña</label>
           <div class="col-12 mb-3">
-            <input name="password" id="password" type="password" class="form-control" required>
+            <input name="password" type="password" class="form-control" minlength="8" required>
           </div>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="form-check">
