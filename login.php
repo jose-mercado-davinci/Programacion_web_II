@@ -19,7 +19,7 @@
     include 'funciones/header.php';
   ?>
 
-  <main class="my-lg-1 py-lg-4">
+  <main class="my-lg-4 py-lg-5">
     <form class="row g-3 col-12 p-4 m-0 justify-content-md-center" method="post" action="show_data.html">
       <div class="bg-primary bg-gradient col-md-6 shadow px-4 py-3 m-0 p-lg-5 py-lg-3">
         <h2 class="text-center display-4 fw-bold" style="color: white;">Login</h2>
