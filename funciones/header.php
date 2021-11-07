@@ -1,8 +1,8 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand ms-lg-4 flex-grow-1" href="index.php">Inicio</a>
-      <a href="login.php"><button type="button" class="btn btn-primary me-3">Login</button></a>
+      <a href="login.php"><button type="button" class="btn btn-primary me-2">Login</button></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
