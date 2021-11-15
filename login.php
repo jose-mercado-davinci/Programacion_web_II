@@ -20,7 +20,7 @@
   ?>
 
   <main class="my-lg-4 py-lg-5">
-    <form class="row g-3 col-12 p-4 m-0 justify-content-md-center" method="post" action="show_data.html">
+    <form class="row g-3 col-12 p-4 m-0 justify-content-md-center" method="post" action="show_data.php">
       <div class="bg-primary bg-gradient col-md-6 shadow px-4 py-3 m-0 p-lg-5 py-lg-3">
         <h2 class="text-center display-4 fw-bold" style="color: white;">Login</h2>
         <hr class="bg-white mb-3">
@@ -34,10 +34,6 @@
             <input name="password" type="password" class="form-control" minlength="8" required>
           </div>
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <div class="form-check">
-              <input class="form-check-input" id="checkbox" type="checkbox" value="" id="flexCheck">
-              <label class="form-check-label" for="flexCheck" style="color: white;">Recordarme</label>
-            </div>
             <button name="login" id="login" type="submit" class="btn btn-secondary bg-gradient">Iniciar sesión</button>
           </div>
           <div style="color: white;">

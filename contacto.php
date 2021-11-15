@@ -21,7 +21,7 @@
 
   <main>
     <section>
-      <form class="row g-3 col-12 mt-5 pb-5 m-0 justify-content-md-center" method="post" action="show_data.html">
+      <form class="row g-3 col-12 mt-5 pb-5 m-0 justify-content-md-center" method="post" action="show_data.php">
         <div class="bg-primary bg-gradient col-md-8 shadow rounded p-4 pt-3 pb-4 m-0 p-md-5 pt-md-3 p-lg-5 pt-lg-3 pb-lg-4">
           <h2 class="text-center display-4 fw-bold" style="color: white;">Contacto</h2>
           <p class="fs-6 text-center" style="color: white;"><em>
@@ -59,7 +59,7 @@
             </div>
 
             <div class="col text-center">
-              <button name="send" type="submit" class="btn btn-secondary bg-gradient">Envíar</button>
+              <button name="sendContact" type="submit" class="btn btn-secondary bg-gradient">Envíar</button>
             </div>
           </div>
         </div>
