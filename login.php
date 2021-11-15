@@ -25,23 +25,19 @@
         <h2 class="text-center display-4 fw-bold" style="color: white;">Login</h2>
         <hr class="bg-white mb-3">
         <div class="row">
-          <label class="form-label" style="color: white;" for="eemail"">Email</label>
+          <label class="form-label" style="color: white;">Email</label>
           <div class="col-12 mb-3">
-            <input type="text" class="form-control" id="eemail" placeholder="Ingresa tu email" name="eemail" required>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required>
             <div class="valid-feedback">Valido.</div>
             <div class="invalid-feedback">Rellena correctamente el campo.</div>
           </div>
-          <label class="form-label" style="color: white;" for="pass">Contraseña</label>
+          <label class="form-label" style="color: white;">Contraseña</label>
           <div class="col-12 mb-3">
-            <input type="password" class="form-control" id="pass" placeholder="Ingresa tu contraseña" name="passw" required minlength="8" required>
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" name="password" required minlength="8" required>
             <div class="valid-feedback">Valido.</div>
             <div class="invalid-feedback">Rellena correctamente el campo.</div>
           </div>
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <div class="form-check">
-              <input class="form-check-input" id="checkbox" type="checkbox" value="" id="flexCheck">
-              <label class="form-check-label" for="flexCheck" style="color: white;">Recordarme</label>
-            </div>
             <button name="login" id="login" type="submit" class="btn btn-secondary bg-gradient">Iniciar sesión</button>
           </div>
           <div style="color: white;">

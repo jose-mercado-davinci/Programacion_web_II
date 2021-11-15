@@ -34,7 +34,7 @@
           </div>
           <label class="form-label" style="color: white;">Fecha de nacimiento</label>
               <div class="col-12 mb-3">
-                <input name="fecha de nacimiento" type="date" class="form-control" value="2003-12-31" required>
+                <input name="date" type="date" class="form-control" value="2003-12-31" required>
               </div>
             <label class="form-label" style="color: white;">Email</label>
               <div class="col-12 mb-3">
@@ -42,11 +42,11 @@
               </div>
             <label class="form-label" style="color: white;">Contraseña</label>
               <div class="col mb-3">
-            <input name="password1" type="password" class="form-control" minlength="8" required>
+            <input name="password" type="password" class="form-control" minlength="8" required>
           </div>
           <label class="form-label" style="color: white;">Repetir contraseña</label>
           <div class="col mb-3">
-            <input name="password2" type="password" class="form-control" minlength="8" required>
+            <input name="password1" type="password" class="form-control" minlength="8" required>
           </div>
           <div class="text-center mb-3">
             <button name="register" id="register" type="submit" class="btn btn-secondary bg-gradient">Registrarse</button>
