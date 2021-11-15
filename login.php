@@ -20,20 +20,28 @@
   ?>
 
   <main class="my-lg-4 py-lg-5">
-    <form class="row g-3 col-12 p-4 m-0 justify-content-md-center" method="post" action="show_data.php">
+    <form class="row g-3 col-12 p-4 m-0 justify-content-md-center was-validated" method="post" action="show_data.php" >
       <div class="bg-primary bg-gradient col-md-6 shadow px-4 py-3 m-0 p-lg-5 py-lg-3">
         <h2 class="text-center display-4 fw-bold" style="color: white;">Login</h2>
         <hr class="bg-white mb-3">
         <div class="row">
-          <label class="form-label" style="color: white;">Email</label>
+          <label class="form-label" style="color: white;" for="eemail"">Email</label>
           <div class="col-12 mb-3">
-            <input name="email" id="email" type="email" class="form-control" required>
+            <input type="text" class="form-control" id="eemail" placeholder="Ingresa tu email" name="eemail" required>
+            <div class="valid-feedback">Valido.</div>
+            <div class="invalid-feedback">Rellena correctamente el campo.</div>
           </div>
-          <label class="form-label" style="color: white;">Contraseña</label>
+          <label class="form-label" style="color: white;" for="pass">Contraseña</label>
           <div class="col-12 mb-3">
-            <input name="password" type="password" class="form-control" minlength="8" required>
+            <input type="password" class="form-control" id="pass" placeholder="Ingresa tu contraseña" name="passw" required minlength="8" required>
+            <div class="valid-feedback">Valido.</div>
+            <div class="invalid-feedback">Rellena correctamente el campo.</div>
           </div>
           <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check">
+              <input class="form-check-input" id="checkbox" type="checkbox" value="" id="flexCheck">
+              <label class="form-check-label" for="flexCheck" style="color: white;">Recordarme</label>
+            </div>
             <button name="login" id="login" type="submit" class="btn btn-secondary bg-gradient">Iniciar sesión</button>
           </div>
           <div style="color: white;">
