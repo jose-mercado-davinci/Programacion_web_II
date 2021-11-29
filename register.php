@@ -27,26 +27,26 @@
         <div class="row">
           <label class="form-label" style="color: white;" for="name">Nombre</label>
             <div class="col-6 mb-3">
-              <input name="name" id="name" type="text" class="form-control" placeholder="Nombre" minlength="3" required>
+              <input name="name" id="name" type="text" class="form-control" placeholder="Nombre" minlength="3" required autocomplete="off">
             </div>
           <div class="col-6 mb-3">
-            <input name="lastname" type="text" class="form-control" placeholder="Apellido" minlength="3" required>
+            <input name="lastname" type="text" class="form-control" placeholder="Apellido" minlength="3" required autocomplete="off">
           </div>
           <label class="form-label" style="color: white;">Fecha de nacimiento</label>
               <div class="col-12 mb-3">
-                <input name="date" type="date" class="form-control" value="2003-12-31" required>
+                <input name="date" type="date" class="form-control" value="" required>
               </div>
             <label class="form-label" style="color: white;">Email</label>
               <div class="col-12 mb-3">
-                <input name="email" type="email" class="form-control" required>
+                <input name="email" type="email" class="form-control" placeholder="Ingrese tu Email" required autocomplete="off">
               </div>
             <label class="form-label" style="color: white;">Contraseña</label>
               <div class="col mb-3">
-            <input name="password" type="password" class="form-control" minlength="8" required>
+            <input name="password" type="password" class="form-control" placeholder="Ingrese tu Contraseña" minlength="4" required>
           </div>
           <label class="form-label" style="color: white;">Repetir contraseña</label>
           <div class="col mb-3">
-            <input name="password1" type="password" class="form-control" minlength="8" required>
+            <input name="password1" type="password" class="form-control" minlength="4" placeholder="Repita su contraseña" required>
           </div>
           <div class="text-center mb-3">
             <button name="register" id="register" type="submit" class="btn btn-secondary bg-gradient">Registrarse</button>

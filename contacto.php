@@ -35,21 +35,21 @@
             <label class="form-label" style="color: white;">Nombre</label>
 
             <div class="col-6 mb-3">
-              <input name="name" type="text" class="form-control" placeholder="Nombre" required>
+              <input name="name" type="text" class="form-control" placeholder="Nombre" required autocomplete="off">
             </div>
 
             <div class="col-6 mb-3">
-              <input name="lastname" type="text" class="form-control" placeholder="Apellido" required>
+              <input name="lastname" type="text" class="form-control" placeholder="Apellido" required autocomplete="off">
             </div>
 
             <div class="col mb-3">
               <label class="form-label" style="color: white;">Email</label>
-              <input name="email" type="email" class="form-control" placeholder="Email" required>
+              <input name="email" type="email" class="form-control" placeholder="Email" required autocomplete="off">
             </div>
 
             <div class="mb-3">
               <label class="form-label" style="color: white;">Teléfono</label>
-              <input name="phone" type="tel" class="form-control" placeholder="Teléfono" required>
+              <input name="phone" type="tel" class="form-control" placeholder="Teléfono" required autocomplete="off">
             </div>
 
             <div class="mb-3">

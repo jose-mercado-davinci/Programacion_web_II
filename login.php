@@ -27,13 +27,13 @@
         <div class="row">
           <label class="form-label" style="color: white;">Email</label>
           <div class="col-12 mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required autocomplete="off">
             <div class="valid-feedback">Valido.</div>
             <div class="invalid-feedback">Rellena correctamente el campo.</div>
           </div>
           <label class="form-label" style="color: white;">Contraseña</label>
           <div class="col-12 mb-3">
-            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" name="password" required minlength="8" required>
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" name="password" required minlength="4" required>
             <div class="valid-feedback">Valido.</div>
             <div class="invalid-feedback">Rellena correctamente el campo.</div>
           </div>
