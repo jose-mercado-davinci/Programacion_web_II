@@ -18,24 +18,53 @@
   <?php
     include 'funciones/header.php';
   ?>
+<!--
+  <?php
+/*
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
 
+  $emailErr = $passwordErr = "";
+  $email = $password = "";
+
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty($_POST["email"])) {
+      $emailErr = "Email is required";
+    } else {
+      $email = test_input($_POST["email"]);
+    }
+      
+    if (empty($_POST["password"])) {
+      $passwordErr = "Password is required";
+    } else {
+      $password = test_input($_POST["password"]);
+    }
+  }
+  */
+  ?>
+-->
   <main class="my-lg-4 py-lg-5">
-    <form class="row g-3 col-12 p-4 m-0 justify-content-md-center was-validated" method="post" action="show_data.php" >
+    <form class="row g-3 col-12 p-4 m-0 justify-content-md-center was-validated" method="post" action="show_data.php">
       <div class="bg-primary bg-gradient col-md-6 shadow px-4 py-3 m-0 p-lg-5 py-lg-3">
         <h2 class="text-center display-4 fw-bold" style="color: white;">Login</h2>
         <hr class="bg-white mb-3">
         <div class="row">
           <label class="form-label" style="color: white;">Email</label>
           <div class="col-12 mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required autocomplete="off">
-            <div class="valid-feedback">Valido.</div>
-            <div class="invalid-feedback">Rellena correctamente el campo.</div>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email" required
+              autocomplete="off">
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
           </div>
           <label class="form-label" style="color: white;">Contraseña</label>
           <div class="col-12 mb-3">
-            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" name="password" required minlength="4" required>
-            <div class="valid-feedback">Valido.</div>
-            <div class="invalid-feedback">Rellena correctamente el campo.</div>
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña"
+              name="password" required minlength="4" required>
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
           </div>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <button name="login" id="login" type="submit" class="btn btn-secondary bg-gradient">Iniciar sesión</button>

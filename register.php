@@ -19,6 +19,55 @@
     include 'funciones/header.php';
   ?>
 
+  <!--
+<?php
+  /*
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+
+  $nameErr = $lastnameErr = $dateErr = $emailErr = $passwordErr = "";
+  $name = $lastname = $date = $email = $password = "";
+
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty($_POST["name"])) {
+      $nameErr = "Name is required";
+    } else {
+      $name = test_input($_POST["name"]);
+    }
+
+    if (empty($_POST["lastname"])) {
+      $lastnameErr = "Lastname is required";
+    } else {
+      $lastname = test_input($_POST["lastname"]);
+    }
+
+    if (empty($_POST["date"])) {
+      $dateErr = "Date is required";
+    } else {
+      $date = test_input($_POST["date"]);
+    }
+
+    if (empty($_POST["email"])) {
+      $emailErr = "Email is required";
+    } else {
+      $email = test_input($_POST["email"]);
+    }
+      
+    if (empty($_POST["password"])) {
+      $passwordErr = "Password is required";
+    } else {
+      $password = test_input($_POST["password"]);
+    }
+  }
+  */
+  ?>
+   -->
+   
   <main>
     <form class="row g-3 col-12 p-4 m-0 justify-content-md-center was-validated" method="post" action="show_data.php">
       <div class="bg-primary bg-gradient col-md-6 shadow px-4 py-3 m-0 p-lg-5 py-lg-3">
@@ -28,25 +77,31 @@
           <label class="form-label" style="color: white;" for="name">Nombre</label>
             <div class="col-6 mb-3">
               <input name="name" id="name" type="text" class="form-control" placeholder="Nombre" minlength="3" required autocomplete="off">
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
             </div>
           <div class="col-6 mb-3">
             <input name="lastname" type="text" class="form-control" placeholder="Apellido" minlength="3" required autocomplete="off">
+            <div class="invalid-feedback">Rellena correctamente el campo</div>
           </div>
           <label class="form-label" style="color: white;">Fecha de nacimiento</label>
               <div class="col-12 mb-3">
                 <input name="date" type="date" class="form-control" value="" required>
+                <div class="invalid-feedback">Rellena correctamente el campo</div>
               </div>
             <label class="form-label" style="color: white;">Email</label>
               <div class="col-12 mb-3">
                 <input name="email" type="email" class="form-control" placeholder="Ingrese tu Email" required autocomplete="off">
+                <div class="invalid-feedback">Rellena correctamente el campo</div>
               </div>
             <label class="form-label" style="color: white;">Contraseña</label>
               <div class="col mb-3">
             <input name="password" type="password" class="form-control" placeholder="Ingrese tu Contraseña" minlength="4" required>
+            <div class="invalid-feedback">Rellena correctamente el campo</div>
           </div>
           <label class="form-label" style="color: white;">Repetir contraseña</label>
           <div class="col mb-3">
             <input name="password1" type="password" class="form-control" minlength="4" placeholder="Repita su contraseña" required>
+            <div class="invalid-feedback">Rellena correctamente el campo</div>
           </div>
           <div class="text-center mb-3">
             <button name="register" id="register" type="submit" class="btn btn-secondary bg-gradient">Registrarse</button>

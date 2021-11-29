@@ -21,7 +21,7 @@
 
   <main>
     <section>
-      <form class="row g-3 col-12 mt-5 pb-5 m-0 justify-content-md-center" method="post" action="show_data.php">
+      <form class="row g-3 col-12 mt-5 pb-5 m-0 justify-content-md-center was-validated" method="post">
         <div class="bg-primary bg-gradient col-md-8 shadow rounded p-4 pt-3 pb-4 m-0 p-md-5 pt-md-3 p-lg-5 pt-lg-3 pb-lg-4">
           <h2 class="text-center display-4 fw-bold" style="color: white;">Contacto</h2>
           <p class="fs-6 text-center" style="color: white;"><em>
@@ -36,26 +36,31 @@
 
             <div class="col-6 mb-3">
               <input name="name" type="text" class="form-control" placeholder="Nombre" required autocomplete="off">
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
             </div>
 
             <div class="col-6 mb-3">
               <input name="lastname" type="text" class="form-control" placeholder="Apellido" required autocomplete="off">
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
             </div>
 
             <div class="col mb-3">
               <label class="form-label" style="color: white;">Email</label>
               <input name="email" type="email" class="form-control" placeholder="Email" required autocomplete="off">
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
             </div>
 
             <div class="mb-3">
               <label class="form-label" style="color: white;">Teléfono</label>
               <input name="phone" type="tel" class="form-control" placeholder="Teléfono" required autocomplete="off">
+              <div class="invalid-feedback">Rellena correctamente el campo</div>
             </div>
 
             <div class="mb-3">
               <label class="form-label" style="color: white;">Mensaje</label>
               <textarea name="msg" class="form-control" rows="2" placeholder="Dejanos tu mensaje" maxlength="140" required
                 style="max-height: 8rem; min-height: 4rem;"></textarea>
+                <div class="invalid-feedback">Rellena correctamente el campo</div>
             </div>
 
             <div class="col text-center">
