@@ -24,13 +24,14 @@
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
         $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
         $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+        $password1 = filter_input(INPUT_POST, 'password1', FILTER_SANITIZE_STRING);
         $date = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING);
         $msg = filter_input(INPUT_POST, 'msg', FILTER_SANITIZE_STRING);
         
         if (isset ($_POST['sendContact'])) {
 
           //JSON
-          $file = file_get_contents("datosContacto.json");
+          $file = file_get_contents("../json/datosContacto.json");
           $data = json_decode($file, TRUE);
 
           $arr = array("name" => $name, "lastname" => $lastname, "email" => $email, "phone" => $phone, "msg" => $msg);
@@ -38,7 +39,7 @@
           array_push($data, $arr);
 
           $newData = json_encode($data);
-          file_put_contents("datosContacto.json", $newData);
+          file_put_contents("../json/datosContacto.json", $newData);
           ?>
 
     <table class="table">
@@ -68,7 +69,7 @@
     } elseif (isset ($_POST['login'])) {
 
     //JSON
-    $file = file_get_contents("datosLogin.json");
+    $file = file_get_contents("../json/datosLogin.json");
     $data = json_decode($file, TRUE);
 
     $arr = array("email" => $email, "password" => $password);
@@ -76,7 +77,7 @@
     array_push($data, $arr);
 
     $newData = json_encode($data);
-    file_put_contents("datosLogin.json", $newData);
+    file_put_contents("../json/datosLogin.json", $newData);
     ?>
 
     <table class="table">
@@ -108,7 +109,7 @@
     } elseif (isset ($_POST['register'])) {
 
       //JSON
-      $file = file_get_contents("datosRegister.json");
+      $file = file_get_contents("../json/datosRegister.json");
       $data = json_decode($file, TRUE);
 
       $arr = array("name" => $name, "lastname" => $lastname, "date" => $date, "email" => $email, "password" => $password);
@@ -116,7 +117,7 @@
       array_push($data, $arr);
 
       $newData = json_encode($data);
-      file_put_contents("datosRegister.json", $newData);
+      file_put_contents("../json/datosRegister.json", $newData);
     ?>
 
     <table class="table">
@@ -128,6 +129,8 @@
           <th scope="col">Fecha de nacimiento</th>
           <th scope="col">Email</th>
           <th scope="col">Contraseña</th>
+          <th scope="col">Contraseña de repetición</th>
+          <th scope="col">¿Contraseñas coinciden?</th>
         </tr>
       </thead>
       <tbody>
@@ -138,6 +141,14 @@
           <td><?php echo $date;?></td>
           <td><?php echo $email;?></td>
           <td><?php echo $password;?></td>
+          <td><?php echo $password1;?></td>
+          <td><?php
+          if ($password == $password1) {
+            echo '<span style="color: green;"> SI </span>';
+          } else {
+            echo '<span style="color: red;"> NO </span>';
+          }
+          ?></td>
         </tr>
       </tbody>
     </table>
@@ -145,7 +156,7 @@
         }
         ?>
 
-    <a href="login.php"><button type="button" class="btn btn-dark mt-3">Volver</button></a>
+    <a href="../login.php"><button type="button" class="btn btn-dark mt-3">Volver</button></a>
   </div>
 
   <!-- BOOTSTRAP -->
