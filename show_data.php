@@ -25,10 +25,22 @@
         $phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
         $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
         $date = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_STRING);
+        $msg = filter_input(INPUT_POST, 'msg', FILTER_SANITIZE_STRING);
         
-/*
         if (isset ($_POST['sendContact'])) {
+
+          //JSON
+          $file = file_get_contents("datosContacto.json");
+          $data = json_decode($file, TRUE);
+
+          $arr = array("name" => $name, "lastname" => $lastname, "email" => $email, "phone" => $phone, "msg" => $msg);
+
+          array_push($data, $arr);
+
+          $newData = json_encode($data);
+          file_put_contents("datosContacto.json", $newData);
           ?>
+
     <table class="table">
       <thead>
         <tr>
@@ -51,8 +63,9 @@
         </tr>
       </tbody>
     </table>
-*/
-    if (isset ($_POST['login'])) {
+
+    <?php
+    } elseif (isset ($_POST['login'])) {
 
     //JSON
     $file = file_get_contents("datosLogin.json");
@@ -72,6 +85,7 @@
           <th scope="col">#</th>
           <th scope="col">Email</th>
           <th scope="col">Contraseña</th>
+          <th scope="col">¿Contraseña correcta?</th>
         </tr>
       </thead>
       <tbody>
@@ -79,12 +93,20 @@
           <th scope="row">1</th>
           <td><?php echo $email;?></td>
           <td><?php echo $password;?></td>
+          <td><?php
+          if ($password == "1234") {
+            echo '<span style="color: green;"> SI </span>';
+          } else {
+            echo '<span style="color: red;"> NO </span>';
+          }
+          ?></td>
         </tr>
       </tbody>
     </table>
 
     <?php
     } elseif (isset ($_POST['register'])) {
+
       //JSON
       $file = file_get_contents("datosRegister.json");
       $data = json_decode($file, TRUE);
